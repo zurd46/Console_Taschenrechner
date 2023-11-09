@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Taschenrechner
 {
@@ -10,21 +10,21 @@ namespace Taschenrechner
 
             while (true)
             {
-                Console.Write("Geben Sie den ersten Operanden ein: ");
+                Console.Write("Geben Sie den erste Zahl ein: ");
                 if (!double.TryParse(Console.ReadLine(), out double operand1))
                 {
-                    Console.WriteLine("Ungültige Eingabe für den ersten Operanden.");
+                    Console.WriteLine("Ungültige Eingabe für den erste Zahl.");
                     continue;
                 }
 
-                Console.Write("Geben Sie den zweiten Operanden ein: ");
+                Console.Write("Geben Sie die zweite Zahl ein: ");
                 if (!double.TryParse(Console.ReadLine(), out double operand2))
                 {
-                    Console.WriteLine("Ungültige Eingabe für den zweiten Operanden.");
+                    Console.WriteLine("Ungültige Eingabe für die zweite Zahl.");
                     continue;
                 }
 
-                Console.WriteLine("Wählen Sie eine Operation:");
+                Console.WriteLine("Welche Operation möchten Sie genau? (Zahl wählen)");
                 Console.WriteLine("1 - Addition");
                 Console.WriteLine("2 - Subtraktion");
                 Console.WriteLine("3 - Multiplikation");
